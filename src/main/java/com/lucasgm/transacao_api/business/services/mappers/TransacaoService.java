@@ -32,7 +32,7 @@ public class TransacaoService {
          }
          if (dto.valor() < 0){
              log.error("Valor não pode ser menor que 0");
-             throw new UnprocessableEntity("Valor não pode ser menor que 0")
+             throw new UnprocessableEntity("Valor não pode ser menor que 0");
          }
 
          listaTransacoes.add(dto);
